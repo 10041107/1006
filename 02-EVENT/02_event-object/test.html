@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hl id="text">안녕하세요</hl>
+    <br>
+
+    <button id="btn1">1번 버튼</button>
+    <button id="btn2">2번 버튼</button>
+    <button id="btn3" onclick = "alert('hello')">3번 버튼</button>
+
+    <script>
+        const $btn1 = document.getElementById("btn1");
+        const $btn2 = document.getElementById("btn2");
+        const $btn3 = document.getElementById("btn3");
+        const $text = document.getElementById("text");
+
+        $btn1.onclick = e => {
+         $text.style.backgroundColor = "blue";
+        }
+
+        $btn2.onclick = e => {
+            $text.textContent = "hi";
+        }
+        
+
+
+    </script>
+
+
+
+</body>
+</html>
